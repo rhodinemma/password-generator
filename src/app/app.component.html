@@ -2,7 +2,7 @@
 
 <div>
   <label>Enter Length</label>
-  <input />
+  <input #myInput (input)="onChangeLength(myInput.value)" />
 </div>
 
 <div>
@@ -26,3 +26,6 @@
   <label>Your Password</label>
   <input [value]="password" />
 </div>
+
+
+{{ length }}
